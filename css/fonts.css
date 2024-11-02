@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "cairo-semibold";
+    src: url("../Fonts/static/Cairo-SemiBold.ttf");
+}
+@font-face {
+    font-family: "cairo-bold";
+    src: url("../Fonts/static/Cairo-Bold.ttf");
+}
+@font-face {
+    font-family: "cairo-xb";
+    src: url("../Fonts/static/Cairo-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "cairo-light";
+    src: url("../Fonts/static/Cairo-Light.ttf");
+}
+@font-face {
+    font-family: "cairo";
+    src: url("../Fonts/static/Cairo-Regular.ttf");
+}

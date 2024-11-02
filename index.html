@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn HTML</title>
+        <link rel="stylesheet" href="./css/fonts.css" />
+        <link rel="stylesheet" href="css/bootstrap.5.1.3.min.css" />
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/bootstrap.bundle.5.1.js"></script>
+        <script src="./js/all.min.js"></script>
+    </head>
+    <body>
+        <!--* Loading page -->
+        <div class="loading">
+            <div class="circles">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+            <h2>Loading...</h2>
+        </div>
+
+        <div class="container p-0 position-relative">
+            <header class="border-bottom border-3 border-secondary">
+                <div class="logo">
+                    <i
+                        class="fab fa-html5 fa-3x bg-light p-2 rounded-circle ms-3 me-3"></i>
+                    <h1>Learn HTML</h1>
+                </div>
+            </header>
+            <div class="online-editor mt-5" style="width: 96%">
+                <div class="icon">
+                    <i class="fas fa-info-circle fa-2x ms-2 mb-1 me-3"></i>
+                    <h4>Important note:</h4>
+                </div>
+                <div class="text alert alert-success">
+                    <span>
+                        To learn HTML and try your code open this editor:
+                    </span>
+                    <div>
+                        <div class="btn btn-primary">
+                            <a
+                                href="html-editor/index.html"
+                                target="_blank"
+                                class="btn-link text-light">
+                                Open the online editor
+                            </a>
+                        </div>
+                        <div class="btn btn-danger ms-4" id="skip-btn">
+                            <a href="#start" class="text-light">Skip it</a>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <!--* Button To top -->
+            <button class="to-top border-0 bg-primary"
+                ><i class="fas fa-angle-up"></i
+            ></button>
+            <div class="p-3">
+                <!--* Chapter 1 -->
+                <div class="chapter-title row bg-warning" id="start">
+                    <div
+                        class="text-light m-0 chapter col-4 col-sm-3 col-md-2 p-1"
+                        >Chapter 1:</div
+                    >
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                        Getting started with HTML:</h2
+                    >
+                </div>
+                <h5 class="alert alert-primary">
+                    <div class="badge bg-dark">HTML</div> (Hypertext Markup
+                    Language) uses a markup system composed of elements which
+                    represent specific content. Markup means that with HTML you
+                    declare what is presented to a viewer, not how it is
+                    presented.
+                </h5>
+                <h5 class="alert alert-danger">
+                    HTML is sometimes called a programming language but it has
+                    no logic, so is a
+                    <div class="badge bg-dark">markup language</div>. HTML tags
+                    provide semantic meaning and machine-readability to the
+                    content in the page
+                </h5>
+                <h5 class="alert alert-primary">
+                    An element usually consists of an opening tag
+                    <strong class="text-muted">(&lt;element_name>)</strong>, a
+                    closing tag <b class="text-muted">(&lt;/element_name>)</b>,
+                    which contain the element's name surrounded by angle
+                    brackets, and the content in between:
+                    <b class="text-muted">&lt;element_name></b>...content...<b
+                        class="text-muted"
+                        >&lt;/element_name></b
+                    >
+                </h5>
+                <div class="code-aria"
+                    ><div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                <code>
+<span class="dot">&lt;!DOCTYPE html></span>
+<span class="tag">&lt;html <span class="attr">lang</span>=<span class="str">"en"</span>></span>
+    <span class="tag">&lt;head></span>
+        <span class="tag">&lt;meta <span class="attr">charset</span>=<span class="str">"UTF-8"</span>></span>
+        <span class="tag">&lt;title></span>Hello!<span class="tag">&lt;/title></span>
+    <span class="tag">&lt;/head></span>
+    <span class="tag">&lt;body></span>
+        <span class="tag">&lt;h1></span>Hello World!<span class="tag">&lt;/h1></span>
+        <span class="tag">&lt;p></span>This is a simple paragraph.<span class="tag">&lt;/p></span>
+    <span class="tag">&lt;/body></span>
+<span class="tag">&lt;/html></span>
+                    </code></pre>
+                </div>
+
+                <!--* Chapter 2 -->
+                <div class="chapter-title row bg-warning">
+                    <div
+                        class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2"
+                        >Chapter 2:</div
+                    >
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                        Headings:
+                    </h2>
+                </div>
+                <h5 class="alert alert-primary">
+                    HTML provides not only plain paragraph tags, but six
+                    separate header tags to indicate headings of various sizes
+                    and thicknesses. Enumerated as
+                    <div class="badge bg-dark">heading 1</div> through
+                    <div class="badge bg-dark">heading 6</div>, heading 1 has
+                    the largest and thickest text while heading 6 is the
+                    smallest and thinnest, down to the paragraph level. This
+                    topic details proper usage of these tags.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                <code>
+<span class="tag">&lt;h1></span>Heading 1 <span class="tag">&lt;/h1></span>    <span class="com">&lt;!-- h1 is the largest heading --></span>
+<span class="tag">&lt;h2></span>Heading 2 <span class="tag">&lt;/h2></span>
+<span class="tag">&lt;h3></span>Heading 3 <span class="tag">&lt;/h3></span>
+<span class="tag">&lt;h4></span>Heading 4 <span class="tag">&lt;/h4></span>
+<span class="tag">&lt;h5></span>Heading 5 <span class="tag">&lt;/h5></span>
+<span class="tag">&lt;h6></span>Heading 6 <span class="tag">&lt;/h6></span>    <span class="com">&lt;!-- h6 is the smallest heading --></span>
+                </code></pre>
+                </div>
+
+                <!--* Chapter 3 -->
+                <div class="chapter-title row bg-warning">
+                    <div
+                        class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2"
+                        >Chapter 3:</div
+                    >
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                        Paragraphs:</h2
+                    >
+                </div>
+                <h5 class="alert alert-primary">
+                    Paragraphs are the most basic HTML element. This topic
+                    explains and demonstrates the usage of the paragraph element
+                    in HTML.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                    <code>
+<span class="tag">&lt;p></span>This is a paragraph.<span class="tag">&lt;/p></span>
+<span class="tag">&lt;p></span>This is another paragraph.<span class="tag">&lt;/p></span>
+<span class="tag">&lt;p></span>This is another paragraph, extra spaces will be removed by browsers<span class="tag">&lt;/p></span>
+                    </code></pre>
+                </div>
+
+                <!--* Chapter 4 -->
+                <div class="chapter-title row bg-warning">
+                    <div
+                        class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2">
+                        Chapter 4:
+                    </div>
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10"
+                        >Text Formatting:
+                    </h2>
+                </div>
+                <h5 class="alert alert-primary">
+                    While most HTML tags are used to create elements, HTML also
+                    provides in-text formatting tags to apply specific
+                    text-related styles to portions of text. This topic includes
+                    examples of HTML text formatting such as highlighting,
+                    bolding, underlining, subscript, and stricken text.
+                </h5>
+                <h3 class="p-2 text-success mt-3">
+                    Section 4.1: Highlighting:
+                </h3>
+                <h5 class="alert alert-warning">
+                    The
+                    <div class="badge bg-dark">&lt;mark> &lt;/mark></div>
+                    element is new in HTML5 and is used to mark or highlight
+                    text in a document
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                    <code>
+<span class="tag">&lt;p></span>Hello, I Love <span class="tag">&lt;mark></span>HTML<span class="tag">&lt;/mark></span> Very Much.<span class="tag">&lt;/p></span>
+                    </code></pre>
+                </div>
+                <h3 class="p-2 text-success mt-3">
+                    Section 4.2: Bold, Italic, and Underline:</h3
+                >
+                <h5 class="alert alert-warning">
+                    The
+                    <div class="badge bg-dark">&lt;strong> &lt;/strong></div>
+                    and <div class="badge bg-dark">&lt;b> &lt;/b></div> tags are
+                    used for transform the text to Bold style
+                </h5>
+                <h5 class="alert alert-warning">
+                    <div class="badge bg-dark">&lt;strong></div> is used to
+                    indicate that the text is fundamentally or semantically
+                    important to the surrounding text, while
+                    <div class="badge bg-dark">&lt;b></div> indicates no such
+                    importance and simply represents text that should be bolded.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                    <code>
+<span class="tag">&lt;strong></span>Bold Text Here <span class="tag">&lt;/strong></span>    <span class="com">&lt;!-- Important Text --></span>
+<span class="tag">&lt;b></span>Bold Text Here <span class="tag">&lt;/b></span>              <span class="com">&lt;!-- Normal Bold Text  --></span>
+                    </code></pre>
+                </div>
+                <h5 class="alert alert-warning">
+                    The <div class="badge bg-dark">&lt;em> &lt;/em></div> and
+                    <div class="badge bg-dark">&lt;i> &lt;/i></div> tags are
+                    used for transform the text to italic style
+                </h5>
+                <h5 class="alert alert-warning">
+                    <div class="badge bg-dark">&lt;em></div> is used to indicate
+                    that the text should have extra emphasis that should be
+                    stressed, while
+                    <div class="badge bg-dark">&lt;i></div> simply represents
+                    text which should be set off from the normal text around it.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                    <code>
+<span class="tag">&lt;em></span>Italicized Text Here <span class="tag">&lt;/em></span>
+<span class="tag">&lt;i></span>Italicized Text Here <span class="tag">&lt;/i></span>
+                        </code></pre>
+                </div>
+                <h5 class="alert alert-warning">
+                    While the
+                    <div class="badge bg-dark">&lt;u> &lt;/u></div> element
+                    itself was deprecated in HTMl 4, it was reintroduced with
+                    alternate semantic meaning in HTML 5 - to represent an
+                    unarticulated, non-textual annotation.<br />&nbsp;&nbsp;You
+                    might use such a rendering to indicate misspelled text on
+                    the page, or for a Chinese proper name mark.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                        <code>
+<span class="tag">&lt;p></span>This paragraph contains some <span class="tag">&lt;u></span>mispelled<span class="tag">&lt;/u></span> text.&lt;<span class="tag">/p></span>
+                        </code></pre>
+                </div>
+                <h3 class="p-2 text-success mt-3">
+                    Section 4.3: Abbreviation:
+                </h3>
+                <h5 class="alert alert-warning">
+                    To mark some expression as an abbreviation, use
+                    <div class="badge bg-dark">&lt;abbr> &lt;/abbr></div> tag.
+                    <br />
+                    If present, the <u class="text-muted">title attribute</u> is
+                    used to present the full description of such abbreviation.
+                </h5>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+                    <code>
+<span class="tag">&lt;p></span>I like to write <span class="tag">&lt;abbr <span class="attr">title</span>=<span class="str">"Hypertext Markup Language"</span>></span>HTML<span class="tag">&lt;/abbr></span>!<span class="tag">&lt;/p></span>
+                    </code></pre>
+                </div>
+                <div>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 4.4: Inserted, Deleted, or Stricken:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        To mark text as inserted, use the
+                        <div class="badge bg-dark">&lt;ins> &lt;/ins></div>
+                        tag, to mark text as deleted, use the
+                        <div class="badge bg-dark">&lt;del> &lt;/del></div> tag,
+                        and to strike through text, use the
+                        <div class="badge bg-dark">&lt;s> &lt;/s></div> tag.
+                    </h5>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;ins></span> Add a new text <span class="tag">&lt;/ins></span> <span class="com">&lt;-- To mark text as inserted --></span>
+<span class="tag">&lt;del></span> Delete a  text <span class="tag">&lt;/del></span> <span class="com">&lt;-- To mark text as deleted --></span>
+<span class="tag">&lt;s></span> Text example here <span class="tag">&lt;/s></span> &nbsp;<span class="com">&lt;-- To strike through text --></span>
+        </code></pre>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 4.5: Superscript and Subscript:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        To offset text either upward or downward you can use the
+                        tags
+                        <div class="badge bg-dark"> &lt;sup> &lt;/sup> </div>
+                        and <div class="badge bg-dark">&lt;sub>&lt;/sub></div>
+                    </h5>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;p> </span>In Physics we use O<span class="tag">&lt;sup></span>2<span class="tag">&lt;/sup></span> <span class="tag">&lt;/p></span>
+<span class="tag">&lt;p> </span>In Maths we use 5<span class="tag">&lt;sub></span>5<span class="tag">&lt;/sub></span> <span class="tag">&lt;/p></span>
+        </code></pre>
+                    </div>
+                </div>
+                <div class="chapter-title row bg-warning">
+                    <div
+                        class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2">
+                        Chapter 5:
+                    </div>
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                        Anchors:
+                    </h2>
+                </div>
+                <h5 class="alert alert-primary">
+                    Anchor tags are commonly used to link separate webpages, but
+                    they can also be used to link between different places in a
+                    single document, often within table of contents or even
+                    launch external applications. This topic explains the
+                    implementation and application of HTML anchor tags in
+                    various roles.
+                </h5>
+                <h5 class="alert alert-warning">
+                    To use the anchor tag in our page we use the
+                    <div class="badge bg-dark">&lt;a> &lt;/a></div>
+                    tag, and we insert to it, the
+                    <span class="text-muted text-decoration-underline">
+                        href </span
+                    >,
+                    <span class="text-muted text-decoration-underline">
+                        hreflang
+                    </span>
+                    and
+                    <span class="text-muted text-decoration-underline">
+                        target
+                    </span>
+                    attributes.
+                </h5>
+                <h4 class="fw-bold text-center d-block"> Anchor Attributes </h4>
+                <table
+                    class="table table-bordered table-primary table-striped"
+                    style="--bs-table-striped-bg: #eee">
+                    <thead class="fw-bold text-center table-success">
+                        <th>Attribute Name</th>
+                        <th>Attribute Role</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>href</td>
+                            <td
+                                >Specifies the destination address. It can be an
+                                absolute or relative URL, or the name of an
+                                anchor. An absolute URL is the complete URL of a
+                                website
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>hreflang</td>
+                            <td>
+                                Specifies the language of the resource linked by
+                                the href attribute
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>
+                                <span>
+                                    pecifies where to open the link, e.g. in a
+                                    new tab or window. Possible values are
+                                    <span class="text-muted m-0 p-0"
+                                        >_blank</span
+                                    >,
+                                    <span class="text-muted m-0 p-0">_self</span
+                                    >,
+                                    <span class="text-muted m-0 p-0"
+                                        >_parent</span
+                                    >,
+                                    <span class="text-muted m-0 p-0">_top</span
+                                    >.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>href</td>
+                            <td
+                                >Specifies the destination address. It can be an
+                                absolute or relative URL, or the name of an
+                                anchor. An absolute URL is the complete URL of a
+                                website
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="online-editor mt-2 bg-danger text-white">
+                    <div class="icon">
+                        <i
+                            class="text-warning fas fa-warning fa-2x ms-2 mb-1 me-3"></i>
+                        <h4>Warning:</h4>
+                    </div>
+                    <div class="text alert alert-danger">
+                        The
+                        <span class="me-0 text-black-50">href</span> attribute
+                        in the anchor tag is mandatory, but the
+                        <span class="me-0 text-black-50">hreflang</span> and
+                        <span class="me-0 text-black-50">target...</span> are
+                        optionals
+                    </div>
+                </div>
+                <div class="code-aria">
+                    <div class="head bg-info">HTML - index.html</div>
+                    <pre>
+        <code>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="str">"https://www.google.com"</span> <span class="attr">target</span>=<span class="str">"_blank"</span>></span> Google <span class="tag">&lt;/a></span>
+<span class="tag">&lt;a <span class="attr">href</span>=<span class="str">"#contact-section"</span>></span> Contact-Us <span class="tag">&lt;/a></span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"javascript:myFunction();"</span><span class="tag">></span> Run The Function <span class="tag">&lt;/a></span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"mailto:example@example.com?subject=test&body=message"</span><span class="tag">></span> Email <span class="tag">&lt;/a></span>
+        </code></pre>
+                </div>
+                <div class="chapter-title row bg-warning">
+                    <div
+                        class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2">
+                        Chapter 6:
+                    </div>
+                    <h2
+                        class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                        Lists:
+                    </h2>
+                </div>
+                <div>
+                    <h5 class="alert alert-primary">
+                        HTML offers three ways for specifying lists: ordered
+                        lists, unordered lists, and description lists. Ordered
+                        lists use ordinal sequences to indicate the order of
+                        list elements, unordered lists use a defined symbol such
+                        as a bullet to list elements in no designated order, and
+                        description lists use indents to list elements with
+                        their children.
+                    </h5>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 6.1: Ordered lists:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        An ordered list can be created with the
+                        <div class="badge bg-black">&lt;ol> &lt;/ol></div> tag
+                        and each list item can be created with the
+                        <div class="badge bg-black">&lt;li> &lt;/li></div> tag
+                        as in the example below:
+                    </h5>
+                    <h4 class="fw-bold text-center d-block">
+                        Ordered list attributes
+                    </h4>
+
+                    <table
+                        class="table table-bordered table-primary table-striped"
+                        style="--bs-table-striped-bg: #eee">
+                        <thead class="fw-bold text-center table-success">
+                            <th>Attribute Name</th>
+                            <th>Attribute Role</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>start</td>
+                                <td>
+                                    The list will start at this defined number,
+                                    and continue incrementing by one as usual.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>value</td>
+                                <td>
+                                    by using the value attribute directly on a
+                                    list item, you can override an ordered
+                                    list's existing numbering system by
+                                    restarting the numbering at a lower value.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>reversed</td>
+                                <td
+                                    >Reverse numbering is helpful if you're
+                                    continually adding to a list, such as with
+                                    new podcast episodes or presentations, and
+                                    you want the most recent items to appear
+                                    first.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>
+                                    change the type of numeral shown in the list
+                                    item marker by using the type attribute
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;ol <span class="attr">start</span>=<span class="str">"10"</span>></span>
+    <span class="tag">&lt;li></span> python <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li></span> java <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li <span class="attr">start</span>=<span class="str">"25"</span>></span> kotlin <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li></span> C# <span class="tag">&lt;/li></span>
+<span class="tag">&lt;/ol></span>
+        </code></pre>
+                    </div>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 6.2: Unordered lists:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        An unordered list can be created with the
+                        <div class="badge bg-black">&lt;ul> &lt;/ul></div> tag
+                        and each list item can be created with the
+                        <div class="badge bg-black">&lt;li> &lt;/li></div> tag
+                        as shown by the example below:
+                    </h5>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;ul></span>
+    <span class="tag">&lt;li></span> python <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li></span> java <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li></span> kotlin <span class="tag">&lt;/li></span>
+    <span class="tag">&lt;li></span> C# <span class="tag">&lt;/li></span>
+<span class="tag">&lt;/ul></span>
+        </code></pre>
+                    </div>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 6.3: Description lists:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        A description list can be created with the
+                        <div class="badge bg-black">&lt;dl> &lt;/dl></div>
+                        element. It consists of name-value groups, where the
+                        name is given in the
+                        <div class="badge bg-black">&lt;dt> &lt;/dt></div>
+                        element, and the value is given in the
+                        <div class="badge bg-black">&lt;dd> &lt;/dd></div>
+                        element.
+                    </h5>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;dl></span>
+    <span class="tag">&lt;dt></span>term 1<span class="tag">&lt;dt></span>
+    <span class="tag">&lt;dt></span>term 2<span class="tag">&lt;dt></span>
+    <span class="tag">&lt;dd></span>Description of term 1 and term 2<span class="tag">&lt;dd></span>
+
+    <span class="tag">&lt;dt></span>term 3<span class="tag">&lt;dt></span>
+    <span class="tag">&lt;dd></span>Description of term 3<span class="tag">&lt;dd></span>
+    <span class="tag">&lt;dd></span>Description of term 3<span class="tag">&lt;dd></span>
+<span class="tag">&lt;/dl></span>
+        </code></pre>
+                    </div>
+
+                    <div class="online-editor mt-5" style="width: 96%">
+                        <div class="icon">
+                            <i
+                                class="fas fa-info-circle fa-2x ms-2 mb-1 me-3"></i>
+                            <h4>Important note:</h4>
+                        </div>
+                        <div class="text alert alert-success">
+                            This type of lists may not be used for much, but it
+                            is a good idea to learn it out of knowledge.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="chapter-title row bg-warning">
+                        <div
+                            class="text-light bg-success m-0 chapter col-4 col-sm-3 col-md-2">
+                            Chapter 7:
+                        </div>
+                        <h2
+                            class="text-primary bg-warning m-0 col-8 col-sm-9 col-md-10">
+                            Images and Media:
+                        </h2>
+                    </div>
+                    <h3 class="p-2 text-success mt-3">
+                        Section 7.1: Images:
+                    </h3>
+                    <h5 class="alert alert-warning">
+                        To add an image to a page, use the image tag
+                        <div class="badge bg-black">&lt;img /></div> .
+                    </h5>
+
+                    <h4 class="fw-bold text-center d-block">
+                        Image attributes
+                    </h4>
+
+                    <table
+                        class="table table-bordered table-primary table-striped"
+                        style="--bs-table-striped-bg: #eee">
+                        <thead class="fw-bold text-center table-success">
+                            <th>Attribute Name</th>
+                            <th>Attribute Role</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>src</td>
+                                <td> Specifies the URL of the image. </td>
+                            </tr>
+                            <tr>
+                                <td>srcset</td>
+                                <td>
+                                    Images to use in different situations.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>sizes</td>
+                                <td> Image sizes between breakpoints. </td>
+                            </tr>
+                            <tr>
+                                <td>usemap</td>
+                                <td> Name of image map to use </td>
+                            </tr>
+                            <tr>
+                                <td>alt</td>
+                                <td>
+                                    Alternative text that should be displayed if
+                                    for some reason the image could not be
+                                    displayed.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Specifies the width of the image </td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Specifies the height of the image </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;img <span class="attr">src</span>=<span class="str">"../imgs/picture1.jpg"</span> <span class="attr">alt</span>=<span class="str">"Not Found Image"</span> /></span>
+        </code></pre>
+                    </div>
+                    <h3 class="p-2 text-success mt-3"> Section 7.2: Audio: </h3>
+                    <h5 class="alert alert-warning">
+                        HTML5 provides a new standard for embedding an audio
+                        file on a web page. <br />
+                        You can embed an audio file to a page using the
+                        <div class="badge bg-black">&lt;audio> &lt;/audio></div>
+                        element.
+                    </h5>
+                    <h4 class="fw-bold text-center d-block">
+                        Media attributes
+                    </h4>
+
+                    <table
+                        class="table table-bordered table-primary table-striped"
+                        style="--bs-table-striped-bg: #eee">
+                        <thead class="fw-bold text-center table-success">
+                            <th>Attribute Name</th>
+                            <th>Attribute Role</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;source></td>
+                                <td>
+                                    Defines resources of the audio or video
+                                    files
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>track</td>
+                                <td>
+                                    Defines the text track for media elements.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>
+                                    Defines the text track for media elements.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>
+                                    Automatically start playing the media.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td> Automatically start playing the media </td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Specifies the width of the image </td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Specifies the height of the image </td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>Plays the media without sound.</td>
+                            </tr>
+                            <tr>
+                                <td>poster</td>
+                                <td
+                                    >Assigns an image to display until a video
+                                    is loaded.</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;audio <span class="attr">controls loop muted</span> ></span>
+    <span class="tag">&lt;source <span class="attr">src</span>=<span class="str">"../media/sound1.mp3"</span> <span class="attr">type</span>=<span class="str">"audio/mp3"</span>> &lt;/source></span>
+<span class="tag">&lt;/audio></span>
+        </code></pre>
+                    </div>
+                    <h3 class="p-2 text-success mt-3"> Section 7.3: Video: </h3>
+                    <h5 class="alert alert-warning">
+                        You can embed also a video to a webpage using the
+                        <div class="badge bg-black">&lt;video> &lt;/video></div>
+                        element:
+                    </h5>
+                    <div class="code-aria">
+                        <div class="head bg-info">HTML - index.html</div>
+                        <pre>
+        <code>
+<span class="tag">&lt;video <span class="attr">controls loop muted poster<span class="text-white">=</span><span class="str">"../imgs/load.jpg"</span></span> ></span>
+    <span class="tag">&lt;source <span class="attr">src</span>=<span class="str">"../media/video1.mp4"</span> <span class="attr">type</span>=<span class="str">"video/mp4"</span>> &lt;/source></span>
+<span class="tag">&lt;/video></span>
+        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <!--! container End-->
+        </div>
+        <footer class="bg-warning pt-3 pb-3 pe-2 ps-2 footer">
+            <div class="text-center">
+                <h5 class="">Copyright &copy; 2024</h5>
+                <h4 class=""
+                    >Created By
+                    <span style="font-weight: bold">Ahmed Bourmdane</span>
+                </h4>
+                <div
+                    class="gap-0 icons"
+                    style="font-size: 18px; font-weight: bold">
+                    <a href="web.facebook.com" target="_blank"
+                        ><span class="fab fa-facebook fa-2x facebook"></span
+                    ></a>
+                    <a href="https://www.instagram.com" target="_blank"
+                        ><span class="fab fa-instagram fa-2x instagram"></span
+                    ></a>
+                    <a href="https://www.twitter.com" target="_blank"
+                        ><span class="fab fa-twitter fa-2x twitter"></span
+                    ></a>
+                    <a href="https://www.github.com" target="_blank"
+                        ><span class="fab fa-github fa-2x github"></span
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            let btn = $(".to-top");
+            btn.hide();
+            window.onscroll = () => {
+                if ($(window).scrollTop() > 700) {
+                    btn.show();
+                } else {
+                    btn.hide();
+                }
+            };
+            btn.click(() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+            let icons = new Array(...$(".icons")[0].children);
+            for (let i = 0; i < icons.length; i++) {
+                icons[i].title = "not found now";
+                $(icons[i]).attr("cursor", "pointer");
+            }
+            $("#skip-btn").click(function (e) {
+                $(".online-editor").hide();
+            });
+
+            //* Hide loading page and show the site
+            let content = $(".container");
+            let loading = $(".loading");
+            let footer = $(".footer");
+            loading.show();
+            content.hide();
+            footer.width(`calc(${loading.width()}px - .05rem)`);
+
+            footer.css({
+                margin: "0px auto",
+                height: "fit-content",
+            });
+
+            loading.height(`calc( 100vh - ${footer.innerHeight()}px)`);
+            window.onload = function () {
+                setTimeout(() => {
+                    loading.hide();
+                    content.show();
+                    footer.width(`calc(${content.width()}px)`);
+                    window.onresize = function () {
+                        footer.width(`calc(${content.width()}px)`);
+                    };
+                }, 4500);
+            };
+
+            //* Table styles:
+            let tableRows = new Array(document.querySelectorAll("table tr"));
+            tableRows[0].forEach(item => {
+                currItem = item.children[0];
+                if (currItem.tagName.toUpperCase() == "TD") {
+                    currItem.style.cssText =
+                        "font-family: cairo-bold; font-size: 18px; display: grid; justify-content: center; text-decoration: underline";
+                }
+            });
+        </script>
+    </body>
+</html>
